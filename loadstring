@@ -1,0 +1,82 @@
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+
+-- Criar a tela de fundo
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "DibuHubGui"
+screenGui.Parent = Players.LocalPlayer:WaitForChild("PlayerGui")
+screenGui.ResetOnSpawn = false
+
+-- Criar o frame preto de fundo
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(1, 0, 1, 0)
+frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frame.BorderSizePixel = 0
+frame.Parent = screenGui
+
+-- Criar o texto "Dibu Hub"
+local titleLabel = Instance.new("TextLabel")
+titleLabel.Size = UDim2.new(0.5, 0, 0.1, 0)
+titleLabel.Position = UDim2.new(0.25, 0, 0.3, 0)
+titleLabel.BackgroundTransparency = 1
+titleLabel.Text = "Dibu Hub"
+titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+titleLabel.TextScaled = true
+titleLabel.Font = Enum.Font.SourceSansBold
+titleLabel.Parent = frame
+
+-- Criar a caixa de texto para a key
+local textBox = Instance.new("TextBox")
+textBox.Size = UDim2.new(0.3, 0, 0.05, 0)
+textBox.Position = UDim2.new(0.35, 0, 0.45, 0)
+textBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+textBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+textBox.PlaceholderText = "Enter key here"
+textBox.Text = ""
+textBox.TextScaled = true
+textBox.Font = Enum.Font.SourceSans
+textBox.Parent = frame
+
+-- Criar o texto com o link do Discord
+local discordLabel = Instance.new("TextLabel")
+discordLabel.Size = UDim2.new(0.5, 0, 0.05, 0)
+discordLabel.Position = UDim2.new(0.25, 0, 0.52, 0)
+discordLabel.BackgroundTransparency = 1
+discordLabel.Text = "Join our Discord: discord.gg/sakamoto,gays"
+discordLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+discordLabel.TextScaled = true
+discordLabel.Font = Enum.Font.SourceSans
+discordLabel.Parent = frame
+
+-- Propaganda 1: Steal a Brain Rot
+local prop1 = Instance.new("TextLabel")
+prop1.Size = UDim2.new(0.6, 0, 0.06, 0)
+prop1.Position = UDim2.new(0.2, 0, 0.6, 0)
+prop1.BackgroundTransparency = 1
+prop1.Text = "🔥 STEAL A BRAIN ROT: Roube mentes e domine o server! 💀"
+prop1.TextColor3 = Color3.fromRGB(255, 0, 0)
+prop1.TextScaled = true
+prop1.Font = Enum.Font.SourceSansBold
+prop1.Parent = frame
+
+-- Propaganda 2: Steal a Brain Rot
+local prop2 = Instance.new("TextLabel")
+prop2.Size = UDim2.new(0.6, 0, 0.06, 0)
+prop2.Position = UDim2.new(0.2, 0, 0.67, 0)
+prop2.BackgroundTransparency = 1
+prop2.Text = "🧠 BRAIN ROT MODE: Transforme seus inimigos em zumbis! 🎮"
+prop2.TextColor3 = Color3.fromRGB(0, 255, 0)
+prop2.TextScaled = true
+prop2.Font = Enum.Font.SourceSans
+prop2.Parent = frame
+
+-- Propaganda 3: Steal a Brain Rot
+local prop3 = Instance.new("TextLabel")
+prop3.Size = UDim2.new(0.6, 0, 0.06, 0)
+prop3.Position = UDim2.new(0.2, 0, 0.74, 0)
+prop3.BackgroundTransparency = 1
+prop3.Text = "⚡ ATIVE AGORA: Steal a Brain Rot - O cheat definitivo! 🚀"
+prop3.TextColor3 = Color3.fromRGB(0, 0, 255)
+prop3.TextScaled = true
+prop3.Font = Enum.Font.SourceSansBold
+prop3.Parent = frame
